@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage 'scm'{
             sh 'git checkout $BRANCH'
+            sh 'git regex'
         }
     }
 }
